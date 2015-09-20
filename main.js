@@ -1,7 +1,9 @@
 var app           = require("app"),
     BrowserWindow = require("browser-window");
 
-require("crash-reporter").start();
+require("crash-reporter").start({
+    submitUrl: "http://localhost:8090/post"
+});
 
 var mainWindow;
 

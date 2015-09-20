@@ -3,8 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <title>Literally Canvas</title>
+
+        <link rel="stylesheet" href="bower_components/literallycanvas/css/literallycanvas.css">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="bower_components/react/react-with-addons.min.js"></script>
+        <script src="bower_components/literallycanvas/js/literallycanvas.js"></script>
     </head>
     <body>
-        <h1>Looks like Electron is working...</h1>
+        <div class="literallycanvas"></div>
+
+        <script>
+            LC.init(document.getElementsByClassName("literallycanvas")[0], {
+                imageURLPrefix: "bower_components/literallycanvas/img"
+            });
+        </script>
     </body>
 </html>
