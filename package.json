@@ -4,6 +4,7 @@
   "description": "Literally Canvas, wrapped in an Electron application",
   "main": "main.js",
   "scripts": {
+    "bower": "bower",
     "electron": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/LukeCarrier/literally-canvas-electron#readme",
   "devDependencies": {
+    "bower": "^1.5.2",
     "electron-prebuilt": "^0.33.0"
   }
 }

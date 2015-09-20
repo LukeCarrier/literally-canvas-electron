@@ -1,0 +1,18 @@
+{
+  "name": "literally-canvas-electron",
+  "version": "0.1.0",
+  "authors": [
+    "Luke Carrier <luke@carrier.im>"
+  ],
+  "description": "Literally Canvas, wrapped in an Electron application",
+  "main": "main.js",
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/LukeCarrier/literally-canvas-electron#readme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
