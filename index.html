@@ -9,14 +9,16 @@
 
         <script src="bower_components/react/react-with-addons.min.js"></script>
         <script src="bower_components/literallycanvas/js/literallycanvas.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="literallycanvas"></div>
 
         <script>
-            LC.init(document.getElementsByClassName("literallycanvas")[0], {
-                imageURLPrefix: "bower_components/literallycanvas/img"
-            });
+            var canvas      = document.getElementsByClassName("literallycanvas")[0],
+                application = new Application(canvas);
+
+            application.run();
         </script>
     </body>
 </html>
