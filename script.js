@@ -45,6 +45,21 @@ Application.prototype.initMenu = function() {
                 ]
             },
             {
+                label: "Edit",
+                submenu: [
+                    {
+                        label: "Undo",
+                        accelerator: "CmdOrCtrl+Z",
+                        click: this.undoLast.bind(this)
+                    },
+                    {
+                        label: "Redo",
+                        accelerator: "CmdOrCtrl+Shift+Z",
+                        click: this.redoLast.bind(this)
+                    }
+                ]
+            },
+            {
                 label: "Help",
                 submenu: [
                     {
@@ -82,6 +97,10 @@ Application.prototype.openFile = function() {
     });
 };
 
+Application.prototype.redoLast = function() {
+    this.literally.redo();
+};
+
 Application.prototype.saveFile = function() {
     var snapshot = JSON.stringify(this.literally.getSnapshot());
 
@@ -105,4 +124,8 @@ Application.prototype.saveFileAs = function() {
 
         fs.writeFile(fileName, snapshot);
     });
+};
+
+Application.prototype.undoLast = function() {
+    this.literally.undo();
 };
