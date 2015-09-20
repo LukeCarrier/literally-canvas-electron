@@ -4,6 +4,7 @@
   "description": "Literally Canvas, wrapped in an Electron application",
   "main": "main.js",
   "scripts": {
+    "electron": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/LukeCarrier/literally-canvas-electron/issues"
   },
-  "homepage": "https://github.com/LukeCarrier/literally-canvas-electron#readme"
+  "homepage": "https://github.com/LukeCarrier/literally-canvas-electron#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^0.33.0"
+  }
 }
