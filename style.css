@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.literallycanvas {
+.literallycanvas, .literallycanvas .literally {
     width: 100vw;
     height: 100vh;
 }

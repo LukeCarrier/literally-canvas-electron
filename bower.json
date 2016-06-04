@@ -16,6 +16,6 @@
     "tests"
   ],
   "devDependencies": {
-    "literallycanvas": "~0.4.10"
+    "literallycanvas": "~0.4.13"
   }
 }
